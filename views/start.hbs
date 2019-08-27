@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body{
+            background: url('http://utoledoalumni.olhblogspot.com/files/2013/03/Screen-Shot-2013-02-18-at-4.17.36-PM.png');
+        }
+
+        #msgs{
+            height:520px;
+            width:550px;
+        }
+
+        .scroll{
+            max-height : 500px;
+            overflow-y: auto;
+        }
+
+        .card{
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+
+        #sugg{
+            border:dashed 2px black;
+            background-color: azure;
+            margin-top:7px;
+        }
+
+        .jumbotron {
+            margin-left: 150px;
+            padding:0;
+            margin-top:0%;
+            padding: 0%;
+            background: url('http://utoledoalumni.olhblogspot.com/files/2013/03/Screen-Shot-2013-02-18-at-4.17.36-PM.png');
+            margin-bottom: 0%;
+        }
+
+        #profile {
+            height:100px;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        #doc{
+            height:250px;
+            width:200px;
+        }
+
+    </style>
+</head>
+<body>    
+
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+            <h3>Hello 
+                {{#if name}}
+                    {{name}} !
+                    {{{Name}}}
+                {{else}} 
+                    Anonymous !
+                {{/if}}
+            </h3>
+        </a>
+        <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" href="/">Sign out</a>
+        </li>
+    </ul>
+    </nav>
+
+<div class="container-fluid" style='margin-top:50px'>
+    
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
+        <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+
+            <li class="nav-item">
+                <a class="nav-link active" href="#">
+                <img id='profile' src='https://cdn3.iconfinder.com/data/icons/users-outline/60/50_-Blank_Profile-_user_people_group_team-512.png'>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="#">
+                Dashboard 
+                </a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" href="/" style='color : azure;'>
+                Signout
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/choose" style='color : azure;'>
+                Choose doctor
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/exit" style='color : azure;'>
+                Checkout
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mailto:abhinavtembulkar@gmail.com" style='color : azure;'>
+                Report
+                </a>
+            </li>
+            </ul>
+    
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Doctor details</span>
+            </h6>
+            <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style='color : azure;'>
+                Dr. {{docname}}
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style='color : azure;'>
+                {{docdetail}}
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style='color : azure;'>
+                {{docdetail}}
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style='color : azure;'>
+                <b>Doctor</b>
+                </a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+
+        <div class="container col-lg-9 col-md-7">
+    
+            <div class="row">
+                 <div class="col-12" style='margin-top:20px'>
+                    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col-auto d-none d-lg-block">
+                        <img id='doc' src='https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE4MDAzNDEwNzcwMjMyODQ2/dr.jpg'>
+                        </div>
+                        <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">
+                               Doctor : Dr.{{doc}}
+                        </strong>
+                        <h3 class="mb-0">{{docname}}</h3>
+                        <div class="mb-1 text-muted">{{docdetail}}</div>
+                        <p class="card-text mb-auto">A spcialist in {{spl2}} and related problems </p>
+                        <div class="box" style='padding-left:15px'>
+                        <div class="row">
+                        <a href="#msgs">Read More</a>
+                        <a class="btn btn-success" style='width:75px; margin-left:50px' href='#msgs'>Online now</a>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 justify-content-center" >
+                    <div class="row">
+                    <div class="chat">
+                        <div class="card">
+                            <div class="card-block scroll" id="msgs">
+                                <!--MEssage boxx-->
+                            </div>
+                        </div>
+                        
+                        <textarea id="mbox"
+                            class="form-control" placeholder="message?"></textarea>
+
+                    </div>
+                    </div>
+                </div>
+                <!--web RTC for webcam -->
+                <!--try carousel-->
+                <div class="col-6" id='sugg'>
+                    {{{link}}}
+                    <iframe src="https://en.wikipedia.org/wiki/" height="540px" width="540px"></iframe>
+                </div>
+            </div>
+
+            <footer class="my-5 pt-5 text-muted text-center text-small">
+                <ul class="list-inline">
+                <li class='list-inline-item'>
+                    <a class='btn btn-danger btn-lg' id='clear'>CLEAR Chat</a>
+                </li>
+                <li class='list-inline-item'>
+                    <a href="/exit" class='btn btn-info btn-lg'>Exit Chat</a>
+                </li>
+                <li class="list-inline-item"><a href="#">Help</a></li>
+                <li class="list-inline-item"><a href="mailto:abhinavtembulkar@gmail.com">Support</a></li>
+                </ul>
+                <p class="mb-1">&copy; 2019 DoctorApp</p>
+            </footer>
+
+        </div>
+        
+    </div>
+
+</div> 
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script src = "bcknd2.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
+    <script>
+        $('#linksrc').hide(500)
+        var outp = $('#linksrc').val();
+        console.log(outp)
+        $('iframe').attr('src','https://en.wikipedia.org/wiki/'+outp)
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

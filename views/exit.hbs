@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron" style='margin-bottom: 0%'>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2>Know your medicine</h2>
+                    <h1>Thank You</h1>
+                    <h4>DESCRIPTION</h4>
+                </div>
+                <div class="col-6">
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjskvOoEm4aEWR2qTiAoJytMTDOSXnMDm7K_-JjtaBZ2BoSNz-wA'>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row">
+
+            {{#if med1}}
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src='https://www.netmeds.com/pub/media/catalog/product/cache/image/57453768b1c789093496adaa9e415a9d/c/r/crocin-pain-relief-tablet-15-s-340387251.jpg' width="100%" height='220px'>
+                <div class="card-body">
+                <strong class="d-inline-block mb-2 text-primary">
+                    {{name1}}
+                </strong>
+                  <p class="card-text">
+                        {{#if desc1}}
+                            {{desc1}}
+                        {{else}}
+                            none
+                        {{/if}}
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">BUY</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+
+            {{#if med2}}
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src='https://www.netmeds.com/pub/media/catalog/product/cache/image/57453768b1c789093496adaa9e415a9d/c/r/crocin-pain-relief-tablet-15-s-340387251.jpg' width="100%" height='220px'>
+                <div class="card-body">
+                <strong class="d-inline-block mb-2 text-primary">
+                    {{name2}}
+                </strong>
+                  <p class="card-text">
+                        {{#if desc2}}
+                            {{desc2}}
+                        {{else}}
+                            none
+                        {{/if}}
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">BUY</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+
+            {{#if med3}}
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src='https://www.netmeds.com/pub/media/catalog/product/cache/image/57453768b1c789093496adaa9e415a9d/c/r/crocin-pain-relief-tablet-15-s-340387251.jpg' width="100%" height='220px'>
+                <div class="card-body">
+                <strong class="d-inline-block mb-2 text-primary">
+                    {{name3}}
+                </strong>
+                  <p class="card-text">
+                        {{#if desc3}}
+                            {{desc3}}
+                        {{else}}
+                            none
+                        {{/if}}
+                  </p><div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">BUY</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+
+            {{#if med4}}
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src='https://www.netmeds.com/pub/media/catalog/product/cache/image/57453768b1c789093496adaa9e415a9d/c/r/crocin-pain-relief-tablet-15-s-340387251.jpg' width="100%" height='220px'>
+                <div class="card-body">
+                <strong class="d-inline-block mb-2 text-primary">
+                    {{name4}}
+                </strong>
+                  <p class="card-text">
+                        {{#if desc4}}
+                            {{desc4}}
+                        {{else}}
+                            none
+                        {{/if}}
+                  </p><div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">BUY</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+
+            {{#if med5}}
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src='https://www.netmeds.com/pub/media/catalog/product/cache/image/57453768b1c789093496adaa9e415a9d/c/r/crocin-pain-relief-tablet-15-s-340387251.jpg' width="100%" height='220px'>
+                <div class="card-body">
+                <strong class="d-inline-block mb-2 text-primary">
+                    {{name5}}
+                </strong>
+                  <p class="card-text">
+                        {{#if desc5}}
+                            {{desc5}}
+                        {{else}}
+                            none
+                        {{/if}}
+                  </p><div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">BUY</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+
+            {{#if med6}}
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src='https://www.netmeds.com/pub/media/catalog/product/cache/image/57453768b1c789093496adaa9e415a9d/c/r/crocin-pain-relief-tablet-15-s-340387251.jpg' width="100%" height='220px'>
+                <div class="card-body">
+                <strong class="d-inline-block mb-2 text-primary">
+                    {{name6}}
+                </strong>
+                  <p class="card-text">
+                        {{#if desc6}}
+                            {{desc6}}
+                        {{else}}
+                            none
+                        {{/if}}
+                  </p><div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">BUY</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+
+          </div>
+      </div>
+    </div>
+    
+      <footer class='text-muted'>
+          <div class="container" style="height: 100px">
+              <br>
+              <p class="float-right">
+                  <a href="#" class='btn btn-outline-secondary'>Back to Top</a>
+              </p>
+                <p><i>This website is built on <a href="https://www.getbootstrap.com">Bootstrap</a> by <b>abhi_temb</b></i></p>
+              <p>2019</p>
+          </div>
+      </footer>
+    </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>     
+  <script>
+    $('button').click(function (){
+      window.location.replace('https://www.netmeds.com/')
+      console.log('hi')
+    })
+  </script>
+</body>
+</html>

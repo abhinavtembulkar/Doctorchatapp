@@ -1,0 +1,27 @@
+{
+  "name": "projdeploy",
+  "version": "1.0.0",
+  "description": "An online doctor consultation app",
+  "main": "test.js",
+  "scripts": {
+    "start" : "node test.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhinavtembulkar/doctorapp.git"
+  },
+  "author": "abhinavtembulkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhinavtembulkar/doctorapp/issues"
+  },
+  "homepage": "https://github.com/abhinavtembulkar/doctorapp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.1.2",
+    "hbs": "^4.0.4",
+    "mongodb": "^3.3.1",
+    "socket.io": "^2.2.0"
+  }
+}

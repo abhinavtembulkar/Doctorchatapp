@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Choose Doctor</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/blog/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+    
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 font-italic">Doctors !</h1>
+            <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+            <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+        </div>
+        </div>
+
+        <form action="/chosey" method="GET">
+        <div class="row mb-2">
+            {{#if doc1}}
+            <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">
+                        Dr.{{name1}}
+                </strong>
+                <h3 class="mb-0">{{prof1}}</h3>
+                <div class="mb-1 text-muted">{{deg1}}</div>
+                <p class="card-text mb-auto">A spcialist in {{spl1}} and related problems </p>
+                <div class="box" style='padding-left:15px'>
+                <div class="row">
+                  <a href="#">Read More</a>
+                  <button class="btn btn-primary" style='width:75px; margin-left:50px' type="submit" name="doc" value='1'>CHAT</button>
+                </div>
+                </div>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                <img src='https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE4MDAzNDEwNzcwMjMyODQ2/dr.jpg' height=250px width=200px>
+                </div>
+            </div>
+            </div>
+            {{/if}}
+    
+            {{#if doc2}}
+            <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">
+                        Dr.{{name2}}
+                </strong>
+                <h3 class="mb-0">{{prof2}}</h3>
+                <div class="mb-1 text-muted">{{deg2}}</div>
+                <p class="card-text mb-auto">A spcialist in {{spl2}} and related problems </p>
+                <div class="box" style='padding-left:15px'>
+                <div class="row">
+                  <a href="/">Read More</a>
+                  <button class="btn btn-primary" name="doc" value='2' style='width:75px; margin-left:50px' href='/start'>CHAT</button>
+                </div>
+                </div>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                <img src='https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE4MDAzNDEwNzcwMjMyODQ2/dr.jpg' height=250px width=200px>
+                </div>
+            </div>
+            </div>
+            {{/if}}
+        </div>
+
+        <div class="row mb-2">
+            {{#if doc3}}
+            <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">
+                        Dr.{{name3}}
+                </strong>
+                <h3 class="mb-0">{{prof3}}</h3>
+                <div class="mb-1 text-muted">{{deg3}}</div>
+                <p class="card-text mb-auto">A spcialist in {{spl3}} and related problems </p>
+                <div class="box" style='padding-left:15px'>
+                <div class="row">
+                  <a href="#">Read More</a>
+                  <button class="btn btn-primary" name="doc" value='3' style='width:75px; margin-left:50px' href='/start'>CHAT</button>
+                </div>
+                </div>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                <img src='https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE4MDAzNDEwNzcwMjMyODQ2/dr.jpg' height=250px width=200px>
+                </div>
+            </div>
+            </div>
+            {{/if}}
+
+            {{#if doc4}}
+            <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">
+                        Dr.{{name4}}
+                </strong>
+                <h3 class="mb-0">{{prof4}}</h3>
+                <div class="mb-1 text-muted">{{deg4}}</div>
+                <p class="card-text mb-auto">A spcialist in {{spl4}} and related problems </p>
+                <div class="box" style='padding-left:15px'>
+                <div class="row">
+                  <a href="#">Read More</a>
+                  <button class="btn btn-primary" name="doc" value='4' style='width:75px; margin-left:50px' href='/start'>CHAT</button>
+                </div>
+                </div>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                <img src='https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE4MDAzNDEwNzcwMjMyODQ2/dr.jpg' height=250px width=200px>
+                </div>
+            </div>
+            </div>
+            {{/if}}
+        </div>
+        </form>
+    </div>
+
+    <div class="jumbotron">
+        <nav class="blog-pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#" aria-disabled="true">Newer</a>
+        </nav>
+    
+        <footer class="blog-footer" style='width:100%'>
+        <p>A doctor consultation app built on <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="mailto:abhinavtembulkar@gmail.com" target="_blank">abhi_temb</a>.</p>
+        <br><a href="#">Back to top</a>
+        </footer>
+    </div>
+</body>
+</html>

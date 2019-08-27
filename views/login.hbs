@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+.container{
+    width:400px;
+    /*margin-top: 180px;*/
+    color: aliceblue;
+}
+
+body {
+  margin: 0;
+}
+
+.hero-image {
+  background-image: url('https://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/9/12/1410533661889/Doctor-standing-up-014.jpg');
+  background-color: #cccccc;
+  height: 720px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+}
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+      <h1>
+          {{#if name}}
+            Hello {{name}} !
+          {{else}}
+            Hello Anonymous !
+          {{/if}}
+      </h1>
+        <div class="container">
+            <div class="card card-login mx-auto text-center bg-dark">
+                <div class="card-header mx-auto bg-dark">
+                        <span class="logo_title mt-5"> Login Dashboard </span>
+        
+                </div>
+                <div class="card-body">
+                    <form action="/login" method="post">
+                        <div class="input-group form-group">
+                            <input type="text" name="user" class="form-control" placeholder="Username">
+                        </div>
+        
+                        <div class="input-group form-group">
+                            <input type="password" name="pass" class="form-control" placeholder="Password">
+                        </div>
+        
+                        <div class="form-group">
+                            <input type="submit" name="btn" value="Login" class="btn btn-outline-danger float-right login_btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

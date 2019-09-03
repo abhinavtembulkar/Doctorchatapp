@@ -1,7 +1,5 @@
 console.log('HELLO')
-
-const socket = io.connect('http://localhost:8000')
-//const socket = io.connect('https://91161664.ngrok.io')
+const socket = io.connect()
 
 socket.emit('senddata',"send data")
 

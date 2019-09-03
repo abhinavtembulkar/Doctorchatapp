@@ -6,7 +6,8 @@ const server = require('http').createServer(app)
 const io = require('socket.io')(server)
 
 const { MongoClient } = require('mongodb')
-const client = new MongoClient('mongodb://localhost:27017',{ useNewUrlParser:true })
+const uri = "mongodb+srv://abhi:7Murderousmaths@cluster0-mwaqt.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
 
 var curr_user
 var PORT = process.env.PORT || 8000

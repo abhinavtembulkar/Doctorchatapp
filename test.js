@@ -10,7 +10,7 @@ const uri = "mongodb+srv://abhi:7Murderousmaths@cluster0-mwaqt.mongodb.net/test?
 const client = new MongoClient(uri, { useNewUrlParser: true });
 
 var curr_user
-var PORT = process.env.PORT || 8000
+var PORT = process.env.PORT || 9000
 
 app.use(express.static(__dirname+'/views'))
 app.set('view engine','hbs')

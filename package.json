@@ -19,7 +19,7 @@
   "homepage": "https://github.com/abhinavtembulkar/doctorapp#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.3.0",
     "hbs": "^4.0.4",
     "mongodb": "^3.3.1",
     "socket.io": "^2.2.0"

@@ -1,4 +1,4 @@
-# doctorapp
+# Doctorchatapp
 A simple doctor - patient online consultancy prototype built on NodeJS with Socket.io . Chats and user details backed up using MongoDB Atlas. 
 
 Project is hosted on : http://doctorchat.herokuapp.com/

@@ -3,7 +3,8 @@ A simple doctor - patient online consultancy prototype built on NodeJS with Sock
 
 Project is hosted on : http://doctorchat.herokuapp.com/
 
-Instructions : For first time user , Create an account using Signup page and Login using username and password.
+## Instructions 
+For first time user , Create an account using Signup page and Login using username and password.
 
 ## screenshots
 

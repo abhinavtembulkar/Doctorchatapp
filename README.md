@@ -8,19 +8,19 @@ Instructions : For first time user , Create an account using Signup page and Log
 ## screenshots
 
 ### start page
-![](/images/doctor1.png)
+<img src="/images/doctor1.PNG" height="300px" width="400px">
 
 ### signup page
-![](/images/signup.png)
+<img src="/images/signup.PNG" height="300px" width="400px">
 
 ### login page
-![](/images/login.png)
+<img src="/images/login.PNG" height="300px" width="400px">
 
 ### chatroom page
-![](/images/chat.png)
+<img src="/images/chat.PNG" height="300px" width="400px">
 
 ### exit page
-![](/images/exit.png)
+<img src="/images/exit.png" height="300px" width="400px">
 
 ### appointments page
-![](images/displays.png)
+<img src="/images/displays.PNG" height="300px" width="400px">

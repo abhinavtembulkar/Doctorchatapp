@@ -6,7 +6,7 @@ Project is hosted on : http://doctorchat.herokuapp.com/
 ## Instructions 
 For first time user , Create an account using Signup page and Login using username and password.
 
-## screenshots
+## Screenshots
 
 ### start page
 <img src="/images/doctor1.PNG" height="300px" width="400px">
